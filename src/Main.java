@@ -14,9 +14,7 @@ public class Main {
         double balanceAfter2 = balanceAfter1 + interestMonth2;
 
 
-
-
-        System.out.println("The interest for the first month is " + interestMonth1);
-        System.out.println("The interest for the second month is " + interestMonth2);
+        System.out.println("The interest for the first month is $" + String.format("%.2f",interestMonth1));
+        System.out.println("The interest for the second month is $" + interestMonth2);
     }
 }
