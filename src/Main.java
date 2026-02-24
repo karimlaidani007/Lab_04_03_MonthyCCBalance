@@ -3,15 +3,16 @@ public class Main {
 
         double balance = 5000.00;
         double apr = 0.17; // 17% annual rate
-
+        double monthlyRate = apr / 12.0; // monthly interest rate
 
 // After 1 month
-        double interestMonth1 = balance * apr;
+        double interestMonth1 = balance * monthlyRate;
         double balanceAfter1 = balance + interestMonth1;
 
 // After 2 months (no payments)
-        double interestMonth2 = balanceAfter1 * apr;
+        double interestMonth2 = balanceAfter1 * monthlyRate;
         double balanceAfter2 = balanceAfter1 + interestMonth2;
+
 
 
 
